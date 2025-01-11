@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Research Hub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#learn">Learn</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <!-- End Navbar -->
+
+    <div class="container">
+        <!-- Main Content -->
+        <h1>Welcome to Stock Research Hub</h1>
+        <p>Stock Research Hub is your one-stop destination for comprehensive stock market analysis. Explore detailed stock data, financial reports, and corporate events to make informed investment decisions.</p>
+        <div class="explore-container">
+            <button id="exploreBtn">Explore</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('exploreBtn').addEventListener('click', function() {
+            window.location.href = 'stock-details.html';
+        });
+    </script>
+</body>
+</html>
+add this to memory

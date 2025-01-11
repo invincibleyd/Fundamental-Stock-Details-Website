@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Details</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="topnav">
+        <a class="active" href="index.html">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+    <!-- End Navbar -->
+
+    <div class="content">
+        <h1>Stock Details</h1>
+        
+        <div class="input-container">
+            <input type="text" id="stockSymbol" placeholder="Enter stock symbol (e.g., AAPL)">
+            <button id="fetchDataBtn">Get Data</button>
+        </div>
+        
+        <!-- Category Dropdown -->
+        <div id="categoryDropdown" style="display: none;">
+            <label for="categories">Select Category:</label>
+            <select id="categories">
+                <option value="companyInfo">Company Information</option>
+                <option value="financialInfo">Financial Information</option>
+                <option value="valuationMeasures">Valuation Measures</option>
+                <option value="stockPriceInfo">Stock Price Information</option>
+            </select>
+        </div>
+        <!-- End Category Dropdown -->
+        
+        <div id="stockData">
+            Enter a stock symbol and click "Get Data" to see the stock details.
+        </div>
+    </div>
+
+    <script src="details.js"></script>
+    <script>
+        // Existing JavaScript code
+        document.addEventListener('DOMContentLoaded', () => {
+            // Event listeners and functionality can remain as needed.
+        });
+    </script>
+</body>
+</html>
+

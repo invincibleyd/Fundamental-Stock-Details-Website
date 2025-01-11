@@ -1,0 +1,195 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Light background color for contrast */
+}
+
+/* Navbar Styles */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+    /* Align navbar items to the left */
+    text-align: left; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for navbar */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
+}
+
+.topnav a {
+    display: inline-block; /* Change to inline-block for better alignment */
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 14px ; /* Padding for links */
+    text-decoration: none;
+    font-size: 17px;
+    transition: 0.3s ease, color 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.topnav a:hover {
+    background-color: #575757;
+    color: white;
+}
+
+.topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+/* Main Container for Home Page */
+.container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    justify-content: top; /* Center align vertically */
+    height: 100vh; /* Full viewport height */
+    padding: 20px; /* Add padding around the content */
+    text-align: center; /* Center text for main content */
+}
+
+/* Main Heading for Home Page */
+.container h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Paragraph for Home Page */
+.container p {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6; /* Improved line spacing for readability */
+}
+
+/* Explore Button */
+.explore-container {
+    margin-top: 20px;
+}
+
+#exploreBtn {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 30px;
+    font-size: 1em;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease; /* Add transition for scaling effect */
+}
+
+#exploreBtn:hover {
+    background-color: #039b5c;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Main Content for Stock Details Page */
+.content {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center align elements */
+    padding: 20px; /* Padding around the content */
+    text-align: center; /* Center text for main content */
+}
+
+/* Main Heading for Stock Details Page */
+.content h1 {
+    font-size: 2.5em;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input Container */
+.input-container {
+    display: flex;
+    justify-content: center; /* Center align input and button */
+    margin-top: 20px;
+}
+
+.input-container input {
+    padding: 10px;
+    font-size: 16px;
+    width: 250px;
+    margin-right: 10px;
+    border: 1px solid #ccc; /* Border around input */
+    border-radius: 4px; /* Rounded corners for input */
+}
+
+.input-container button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #04AA6D;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background 0.3s ease, transform 0.2s ease; /* Add transition for scaling effect */
+}
+
+.input-container button:hover {
+    background-color: #039b5c;
+    transform: scale(1.05); /* Slightly enlarge button on hover */
+}
+
+/* Category Dropdown */
+#categoryDropdown {
+    margin-top: 20px; /* Spacing above the dropdown */
+}
+
+#categories {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; /* Border around select */
+    border-radius: 4px; /* Rounded corners for select */
+}
+
+/* Stock Data Area */
+#stockData {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container h1,
+    .content h1 {
+        font-size: 2em; /* Adjust font size for smaller screens */
+    }
+
+    .container p,
+    #stockData {
+        font-size: 1em; /* Adjust paragraph size for smaller screens */
+    }
+
+    #exploreBtn,
+    .input-container button {
+        padding: 10px 20px; /* Smaller padding for the button on mobile */
+    }
+
+    .input-container input {
+        width: 200px; /* Adjust width for smaller screens */
+    }
+} 
+/* Stock Data Container */
+#stockData {
+    text-align: left; /* Align text to the left */
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: #555;
+    background-color: #fff; /* White background for the box */
+    border: 1px solid #ccc; /* Border around the box */
+    border-radius: 4px; /* Rounded corners for the box */
+    padding: 20px; /* Padding inside the box */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for the box */
+    max-width: 600px; /* Limit the width of the box */
+    width: 100%; /* Full width on smaller screens */
+    overflow-wrap: break-word; /* Ensure long text wraps within the box */
+}
+
+/* Adjust category dropdown styles */
+#categoryDropdown {
+    margin-top: 20px; /* Spacing above the dropdown */
+    text-align: left; /* Align dropdown to the left */
+}
